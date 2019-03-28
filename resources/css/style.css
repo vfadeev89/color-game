@@ -493,3 +493,80 @@ textarea {
 input[type="checkbox"] {
     margin: 10px 5px 10px 0;
 }
+
+
+/* ------------------------------------------------------- */
+/* FOOTER */
+/* ------------------------------------------------------- */
+
+
+footer {
+    background-color: #333333;
+    padding: 50px;
+    font-size: 80%;
+}
+
+footer p {
+    color: #888888;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.footer-nav {
+    list-style: none;
+    float: left;
+}
+
+.social-links {
+    list-style: none;
+    float: right;
+}
+
+.footer-nav li,
+.social-links li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.footer-nav li:last-child,
+.social-links li:last-child {
+    margin-right: 0;
+}
+
+.footer-link:link,
+.footer-link:visited {
+    text-decoration: none;
+    border: 0;
+    color: #888888;
+    transition: color 0.2s;
+    padding-bottom: 0;
+}
+
+.footer-link:hover,
+.footer-link:active {
+    text-decoration: none;
+    color: #dddddd;
+}
+
+.ion-logo-vk,
+.ion-logo-facebook,
+.ion-logo-twitter,
+.ion-logo-instagram {
+    transition: color 0.2s;
+}
+
+.ion-logo-vk:hover {
+    color: #4c75a3;
+}
+
+.ion-logo-facebook:hover {
+    color: #3b5998;
+}
+
+.ion-logo-twitter:hover {
+    color: #55acee;
+}
+
+.ion-logo-instagram:hover {
+    color: #517fa4;
+}
