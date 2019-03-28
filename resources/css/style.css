@@ -49,6 +49,45 @@ section {
     padding: 1%;
 }
 
+/* ----- LINKS ----- */
+
+a:link,
+a:visited {
+    color: #e67e22;
+    text-decoration: none;
+    padding-bottom: 2px;
+    border-bottom: 1px solid #e67e22;
+    transition: border-bottom-color 0.2s;
+}
+
+a:hover,
+a:active {
+    color: #cf6d17;
+    border-bottom: 1px solid transparent;
+}
+
+/* ----- ICONS ----- */
+.icon-big {
+    display: block;
+    font-size: 350%;
+    color: #e67e22;
+    margin-bottom: 10px;
+}
+
+.icon-small {
+    display: inline-block;
+    width: 30px;
+    text-align: center;
+    color: #e67e22;
+    font-size: 120%;
+
+    /* secrets to align text and icons */
+    line-height: 120%;
+    vertical-align: middle;
+    margin-top: -4px;
+    margin-right: 10px;
+}
+
 
 /* ----- HEADINGS ----- */
 h1,
@@ -103,15 +142,6 @@ h3 {
 }
 
 
-/* ----- PARAGRAPHS ----- */
-.icon-big {
-    display: block;
-    font-size: 350%;
-    color: #e67e22;
-    margin-bottom: 10px;
-}
-
-
 /* ----- BUTTONS ----- */
 .btn:link,
 .btn:visited {
@@ -123,6 +153,11 @@ h3 {
     border-radius: 200px;
     border: 1px solid #e67e22;
     transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+
+.btn-app:link,
+.btn-app:visited {
+    border: none;
 }
 
 .btn-full:link,
@@ -300,4 +335,20 @@ header {
     height: 50px;
     width: auto;
     margin-right: 10px;
+}
+
+
+/* ------------------------------------------------------- */
+/* CITIES */
+/* ------------------------------------------------------- */
+
+
+.city-feature {
+    margin-bottom: 5px;
+}
+
+.city-photo {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
 }
