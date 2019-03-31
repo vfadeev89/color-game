@@ -614,3 +614,25 @@ footer p {
 .ion-logo-instagram:hover {
     color: #517fa4;
 }
+
+
+/* ------------------------------------------------------- */
+/* ANIMATIONS */
+/* ------------------------------------------------------- */
+
+
+.js--waypoint-1,
+.js--waypoint-2,
+.js--waypoint-3 {
+    opacity: 0;
+}
+
+.js--waypoint-4 {
+    animation-duration: 1s;
+}
+
+.js--waypoint-1.animated,
+.js--waypoint-2.animated,
+.js--waypoint-3.animated {
+    opacity: 1;
+}

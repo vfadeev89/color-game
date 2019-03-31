@@ -4,6 +4,7 @@ $(document).ready(function () {
     setupStickyNavigation();
     setupScrollOnButtons();
     setupScrollOnAnchors();
+    setupAnimations();
 });
 
 function setupStickyNavigation() {
@@ -42,5 +43,31 @@ function setupScrollOnAnchors() {
                 scrollTop: target.offset().top
             }, scrollSpeed);
         }
+    });
+}
+
+function setupAnimations() {
+    $('.js--waypoint-1').waypoint(function () {
+        $('.js--waypoint-1').addClass('animated fadeIn');
+    }, {
+        offset: '75%'
+    });
+
+    $('.js--waypoint-2').waypoint(function () {
+        $('.js--waypoint-2').addClass('animated fadeInLeft');
+    }, {
+        offset: '75%'
+    });
+
+    $('.js--waypoint-3').waypoint(function () {
+        $('.js--waypoint-3').addClass('animated fadeInUp');
+    }, {
+        offset: '75%'
+    });
+
+    $('.js--waypoint-4').waypoint(function () {
+        $('.js--waypoint-4').addClass('animated tada');
+    }, {
+        offset: '50%'
     });
 }
