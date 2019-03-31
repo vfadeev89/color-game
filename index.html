@@ -2,12 +2,18 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link type="text/css" rel="stylesheet" href="vendors/css/normalize.css">
     <link type="text/css" rel="stylesheet" href="vendors/css/grid.css">
     <link type="text/css" rel="stylesheet" href="resources/css/style.css">
     <link type="text/css" rel="stylesheet" href="resources/css/queries.css">
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400" rel="stylesheet">
     <link href="https://unpkg.com/ionicons@4.5.5/dist/css/ionicons.min.css" rel="stylesheet">
+
+    <script src="vendors/js/jquery-3.3.1.min.js" defer></script>
+    <script src="vendors/js/jquery.waypoints.min.js" defer></script>
+    <script src="resources/js/script.js" defer></script>
+
     <title>Omni food</title>
 </head>
 <body>
@@ -16,6 +22,7 @@
     <nav>
         <div class="row">
             <img class="logo" src="resources/img/logo-white.png" alt="Omni food logo">
+            <img class="logo-black" src="resources/img/logo.png" alt="Omni food logo">
 
             <ul class="main-nav">
                 <li><a href="#">Food delivery</a></li>
@@ -33,7 +40,7 @@
     </div>
 </header>
 
-<section class="section-features">
+<section class="section-features js--section-features">
     <div class="row">
         <h2>Get food fast &mdash; not fast food.</h2>
         <p class="long-copy">Hello, we're Omnifood, your new premium food delivery service. We know you're always busy.

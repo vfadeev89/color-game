@@ -209,11 +209,20 @@ header {
     transform: translate(-50%, -50%);
 }
 
+/* ----- Main nav ----- */
 .logo {
     height: 100px;
     width: auto;
     float: left;
     margin-top: 20px;
+}
+
+.logo-black {
+    display: none;
+    height: 50px;
+    width: auto;
+    float: left;
+    margin-top: 5px;
 }
 
 .main-nav {
@@ -240,6 +249,40 @@ header {
 
 .main-nav li a:hover,
 .main-nav li a:active {
+    border-bottom: 2px solid #e67e22;
+}
+
+/* ----- Sticky nav ----- */
+.sticky .logo {
+    display: none;
+}
+
+.sticky .logo-black {
+    display: block;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f4f4f4;
+    box-shadow: 0 2px 2px #ebebeb;
+    z-index: 9999;
+}
+
+.sticky .main-nav {
+    margin: 18px 0;
+}
+
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited {
+    padding: 16px 0;
+    color: #555;
+}
+
+.sticky .main-nav li a:hover,
+.sticky .main-nav li a:active {
     border-bottom: 2px solid #e67e22;
 }
 
