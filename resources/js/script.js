@@ -1,13 +1,25 @@
 const scrollSpeed = 1000;
 
 $(document).ready(function () {
-    setupStickyNavigation();
+    setupMobileNav();
+    setupStickyNav();
     setupScrollOnButtons();
     setupScrollOnAnchors();
     setupAnimations();
 });
 
-function setupStickyNavigation() {
+function setupMobileNav() {
+    $('.js--nav-icon').click(function (event) {
+        event.preventDefault();
+        let nav = $('.js--main-nav');
+        let icon = $('.js--nav-icon i');
+        nav.slideToggle(200);
+        icon.toggleClass('icon ion-md-menu');
+        icon.toggleClass('icon ion-md-close');
+    })
+}
+
+function setupStickyNav() {
     $('.js--section-features').waypoint(function (direction) {
         if (direction === 'down') {
             $('nav').addClass('sticky');
