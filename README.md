@@ -4,4 +4,6 @@
 
 Это простой одностраничный сайт для вымышленной компании, которая занимается доставкой еды.
 
+https://vfadeev89.github.io/omni-food/index.html
+
 ![](https://www.thecreativedonut.com/wp-content/uploads/2017/02/MBP_pure-front-min-11.png)
